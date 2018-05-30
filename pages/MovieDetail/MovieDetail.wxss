@@ -1,0 +1,128 @@
+.moive-container {
+  display: flex;
+  flex-direction:column;
+  min-height: 100%;
+  justify-content: space-between;
+  align-items: space-around;
+  margin-top: 0%;
+}
+.movieinfo {
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  overflow: hidden;
+  margin-bottom: 5%;
+  margin-top: -1%;
+}
+.movieinfo:before {
+   content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 400rpx;
+}
+.movieinfo-title {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 65%;
+  left: 7%;
+}
+.movieinfo-other {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  justify-content : space-between;
+  padding-left: 5rpx;
+}
+
+.movieinfo-border {
+  border:0.5px solid;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  border-radius:10px;
+  border-color: #999999;
+  font-size: 30rpx;
+  color: #fff;
+}
+.movie-data {
+   display: flex;
+    height: 150rpx;
+    justify-content:space-between;
+    align-items:flex-start;
+    border-bottom: 1px solid #f4f4f4;
+}
+.movie-data-item{
+    width: 33.33%;
+    text-align: center;  
+    border-left: 1px solid #eee;
+}
+.movie-data-item:first-child {
+    border-left: none;
+}
+.movie-data-num {
+    font-size: 40rpx;
+    font-weight: 100;
+    color: #444;
+}
+.movie-data-title {
+    color: #999;
+}
+/*分割线样式*/
+.divLine{
+ background: #f3f3f3;
+ width: 100%;
+ height: 5rpx;
+}
+.summary {
+  padding-left: 30rpx;
+  padding-top: 50rpx;
+}
+.summary-title {
+  padding-left: 10rpx;
+  border-left: 10rpx solid #47a86c;
+  font-weight: bold;
+  color: #444;
+}
+.summary-content {
+  margin-top: 50rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #666;
+}
+.casts {
+  padding-left: 30rpx;
+  padding-top: 50rpx; 
+}
+.casts-title {
+  padding-left: 10rpx;
+  border-left: 10rpx solid #47a86c;
+  font-weight: bold;
+  color: #444;
+}
+.casts-image {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f4f4f4;
+}
+.casts-image-item {
+  margin-top: 50rpx;
+  border-left: 5px solid #eee;
+  font-size: 30rpx;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+.casts-image-item image{
+  width: 200rpx;
+}
+.casts-image-item:first-child {
+  border-left: none;
+}

@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/BeingFilm/BeingFilm",
+    "pages/Coming/Coming",
+    "pages/Top/Top",
+    "pages/MovieDetail/MovieDetail",
+    "pages/MySetting/MySetting",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/BeingFilm/BeingFilm",
+      "text": "正在热映",
+      "iconPath": "images/BeingFilm_icon.png",
+      "selectedIconPath": "images/BeingFilm_active_icon.png"
+    },{
+      "pagePath": "pages/Coming/Coming",
+      "text": "准备上映",
+      "iconPath": "images/coming_icon.png",
+      "selectedIconPath": "images/coming_active_icon.png"
+    },{
+      "pagePath": "pages/Top/Top",
+      "text": "最佳口碑",
+      "iconPath": "images/top_icon.png",
+      "selectedIconPath": "images/top_active_icon.png"
+    },{
+      "pagePath": "pages/MySetting/MySetting",
+      "text": "我的",
+      "iconPath": "images/my_icon.png",
+      "selectedIconPath": "images/my_active_icon.png"
+    }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+.swipe-Item {
+    width: 350rpx;
+    border-radius: 15rpx;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 20rpx 40rpx #eee;
+    overflow: hidden;
+    animation: fadeIn 1s;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.films-Item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+.left {
+   width: 30%;
+   height: 300rpx;
+   margin-top: 2%;
+   margin-bottom: 2%;
+   margin-left: 2%;
+}
+.midle {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 2% 0 3%
+}
+.right {
+  font-size: 40rpx;
+  color: red;
+  margin: 2% 3% 0 1%
+}
+.label-txt1 {
+  text-align: left;
+  word-break: break-all;
+  white-space:pre-line; 
+  font-family : Times New Roman,Georgia,Serif;
+  font-size: 40rpx;
+  font-weight : bold;
+  padding-bottom: 10%
+}
+.label-txt2 {
+  text-align: left;
+  word-break: break-all;
+  white-space:pre-line; 
+  font-size: 30rpx;
+  color: #999999;
+  line-height: 170%;
+}
+
+/*分割线样式*/
+.divLine{
+ background: #f3f3f3;
+ width: 100%;
+ height: 5rpx;
+}

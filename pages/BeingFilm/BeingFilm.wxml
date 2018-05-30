@@ -1,0 +1,35 @@
+<view>
+  <swiper indicator-dots='true' autoplay='true'>
+    <block wx:for="{{swiperURL}}">
+      <swiper-item class='swipe-Item'>
+        <image src="{{item}}" class="slide-image" mode='aspectFill'/>  
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view>
+  <block wx:for="{{films}}" wx:for-index="filmsIndex" wx:for-item="filmsItem" wx:key="film">
+    <!--分割线-->
+    <view class="divLine"></view>
+    <view class='films-Item' data-id='{{filmsItem.movieid}}' bindtap='movieDetail'>
+      <image src='{{filmsItem.imageurl}}' class='left'></image>
+      <view class = 'midle'>
+        <label class='label-txt1'>
+          <text>{{filmsItem.moviename}}</text>
+        </label>
+        <label class='label-txt2'>
+          <text>导演：{{filmsItem.directors}}\n</text>
+          <text>主演：{{filmsItem.casts}}</text>
+        </label>
+      </view>
+      <view class='right'>
+        <block wx:if="{{filmsItem.scoreavg == 0}}">
+            暂无评分
+        </block>
+        <block wx:else>
+            {{filmsItem.scoreavg}}
+        </block>
+      </view>
+    </view>  
+  </block>
+</view>

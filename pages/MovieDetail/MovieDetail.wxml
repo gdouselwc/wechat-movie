@@ -1,0 +1,42 @@
+<view class='moive-container'>
+  <view class='movieinfo' style='background-image:url({{moviedetail.imageUrl}})'> 
+    <view class='movieinfo-title'>{{moviedetail.movieName}}</view>
+    <view class='movieinfo-other'>
+      <text class='movieinfo-border'>{{moviedetail.genres}} </text>
+      <text class='movieinfo-border'>{{moviedetail.countries}}</text>
+      <text class='movieinfo-border' style='color:red'>{{moviedetail.scoreAvg}}</text>
+    </view>
+  </view> 
+  <view class="movie-data">
+    <view class="movie-data-item">
+        <view class="movie-data-num">{{moviedetail.collectCount}}</view>
+        <view class="movie-data-title">看过</view>
+    </view>
+    <view class="movie-data-item">
+        <view class="movie-data-num">{{moviedetail.wishCount}}</view>
+        <view class="movie-data-title">想看</view>
+    </view>
+    <view class="movie-data-item">
+        <view class="movie-data-num">{{moviedetail.rateCount}}</view>
+        <view class="movie-data-title">评分人数</view>
+    </view>
+  </view>
+  <view class='summary'>
+    <view class='summary-title'>剧情简介</view>
+    <view class='summary-content'>{{moviedetail.summary}}</view>
+  </view>
+ 
+  <view class='casts'>
+    <view class='casts-title'>影人</view>
+    <scroll-view scroll-x> 
+      <view class='casts-image'>
+        <block wx:for="{{moviedetail.casts}}" wx:for-index="castIndex" wx:for-item="castItem" wx:key="cast" >
+          <view class='casts-image-item'>
+            <image src='{{castItem.imageURL}}' mode='widthFix'></image>
+            <text>{{castItem.name}}</text>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>
