@@ -1,8 +1,9 @@
-
+var ip = "http://192.168.1.6:8080"
 module.exports = {
   txMapKey : "MIHBZ-YOIKX-SHJ4O-7G2QL-LEEQT-B2F4G",
   apiList : {
-    BeingFilms: "http://99.12.206.203:8080/BeingFilms.mn",
-    MovieDetail: "http://99.12.206.203:8080/MovieDetail.mn",
+    BeingFilms: `${ip}/BeingFilms.mn`,
+    MovieDetail: `${ip}/MovieDetail.mn`,
+    CommingFilms: `${ip}/CommingFilms.mn`,
   }
 }

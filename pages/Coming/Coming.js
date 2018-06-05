@@ -1,11 +1,12 @@
-// pages/Coming/Coming.js
+var config = require("../../utils/config")
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    films: []
   },
 
   /**
@@ -19,7 +20,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    this.GetData();
   },
 
   /**
@@ -62,5 +63,30 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  /**
+   * 获取数据
+   */
+  GetData : function(){
+    var that = this;
+    wx.login({
+      success:function(res){
+        if(res.code){
+          wx.request({
+            url: config.apiList.CommingFilms,
+            method : 'GET',
+            success: function (res) {
+              console.log(res);
+              that.setData({
+                swiperURL: tmp,
+                films: res.data,
+              })
+            }
+          })
+        }
+      }
+    })
+
   }
 })

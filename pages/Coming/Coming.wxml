@@ -1,2 +1,8 @@
-<!--pages/Coming/Coming.wxml-->
-<text>pages/Coming/Coming.wxml</text>
+<view>
+  <block wx:for="{{films}}" wx:for-index="filmsIndex" wx:for-item="filmsItem"          
+  wx:key="film">
+    <view class='films-Item' data-id='{{filmsItem.movieid}}' bindtap='movieDetail'>
+      
+    </view>
+  </block>
+</view>

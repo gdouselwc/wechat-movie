@@ -77,6 +77,7 @@ Page({
   },
 
   onGetData: function(){
+    console.log(config.apiList.BeingFilms)
     var that = this
     wx.login({
       success:function(res){
